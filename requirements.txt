@@ -1,0 +1,18 @@
+# Core dependencies shared across all groups
+openai>=1.0.0
+python-dotenv>=1.0.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Group 1 & 2 specific
+sentence-transformers>=2.2.0   # A-Mem, MemoryBank, MemoryOS, THEANINE, MemTree
+mem0ai>=0.1.0                  # Mem0
+requests>=2.31.0               # MemOS cloud API
+
+# Group 3 specific
+duckduckgo-search>=3.9.0       # AWM, Memento web search
+
+# Note: MemGPT (Letta) requires separate installation — see Group 1 & 2 notebooks
+# Note: Memento (AgentFly) requires its own venv — see Group 3 notebook

@@ -1,0 +1,30 @@
+# API keys
+.env
+
+# Results (large JSON files)
+results/
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (datasets are hosted on HuggingFace, not in repo)
+data/
+datasets/
+*.jsonl
+*.json
