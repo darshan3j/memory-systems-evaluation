@@ -120,7 +120,10 @@ pip install -r requirements.txt
 ### 3. Set up API keys
 ```bash
 cp .env.example .env
-# Edit .env and add your keys
+# Edit .env and add your keys:
+# OPENAI_API_KEY     — required by all systems
+# LETTA_API_KEY      — required for MemGPT (Groups 1 & 2)
+# MEMOS_API_KEY      — required for MemOS (Group 2 only)
 ```
 
 ### 4. Download datasets
