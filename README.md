@@ -99,6 +99,30 @@ All filtered evaluation sets (250 questions each) are hosted on HuggingFace:
 
 ---
 
+## Hardware Requirements
+
+No GPU is required. All LLM inference is done via API (OpenAI, Letta Cloud, MemOS Cloud). Local models are only used for embeddings and run on CPU.
+
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| CPU | 4-core | 8-core |
+| RAM | 8 GB | 16 GB |
+| Disk | 15 GB free | 20 GB free |
+| Internet | Required | Required |
+| GPU | Not required | Not required |
+
+**Disk breakdown:**
+- Python environments (3 separate): ~8–10 GB total
+- Local embedding models (auto-downloaded on first run):
+  - `all-MiniLM-L6-v2` (~90 MB) — used by A-Mem, MemoryBank, MemTree, MemoryOS
+  - `princeton-nlp/sup-simcse-bert-base-uncased` (~440 MB) — used by Memento
+- Datasets (9 × 250-question JSON files): ~200 MB
+- Result files: ~100 MB
+
+> **Note:** MemoryOS Group 1 evaluation processes 242 QA pairs per conversation and can take **6–8 hours** for 250 questions due to the hierarchical memory structure.
+
+---
+
 ## Setup
 
 ### 1. Clone the repo
